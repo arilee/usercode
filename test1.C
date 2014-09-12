@@ -8,7 +8,9 @@
 		}
 	}
 	cout << sum <<endl;
+	TCanvas *c = new TCanvas("c","c",1);
 	h->Draw();
+	c->Print("test.pdf");
 
 }
 
