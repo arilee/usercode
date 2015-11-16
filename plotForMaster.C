@@ -54,5 +54,6 @@ void plotForMaster(){
   hs->Add(h_MET[2]);
   hs->Add(h_MET[3]);
   hs->Draw();
+  h_MET[0]->Draw("SameP");
 
 }
