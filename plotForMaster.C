@@ -31,7 +31,7 @@ void plotForMaster(){
   scale[3] = 6025.2 / 26653505.0 * 1263.0;
 
   for(int i = 1; i < n; i++){
-  h_MET[i]->Scale(scale[i]);
+    h_MET[i]->Scale(scale[i]);
   }
 
   /*h_MET[1]->Draw();
