@@ -34,6 +34,9 @@ void plotForMaster(){
     h_MET[i]->Scale(scale[i]);
   }
 
+  h_MET[0]->SetMarkerSize(0.4);
+  h_MET[0]->SetMarkerStyle(20);
+  
   /*h_MET[1]->Draw();
   h_MET[2]->Draw("Same");
   h_MET[3]->Draw("Same");
@@ -44,8 +47,6 @@ void plotForMaster(){
   c1->cd();
   THStack *hs = new THStack("hs","");
 
-  h_MET[0]->SetMarkerSize(0.4);
-  h_MET[0]->SetMarkerStyle(20);
   h_MET[1]->SetFillColor(3);
   h_MET[2]->SetFillColor(2);
   h_MET[3]->SetFillColor(4);
@@ -53,7 +54,6 @@ void plotForMaster(){
   hs->Add(h_MET[1]);
   hs->Add(h_MET[2]);
   hs->Add(h_MET[3]);
-  hs->Add(h_MET[0]);
   hs->Draw();
 
 }
